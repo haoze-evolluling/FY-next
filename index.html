@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个简洁、美观、实用的浏览器起始页">
+    <meta name="theme-color" content="#000000">
+    <title>个人起始页</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 时间显示 -->
+        <div class="time-display" id="timeDisplay">08:47</div>
+        
+        <!-- 天气显示 -->
+        <div class="weather-display" id="weatherDisplay">
+            <!-- 天气信息将通过JavaScript动态加载 -->
+        </div>
+        
+        <!-- 搜索栏 -->
+        <div class="search-bar">
+            <form id="searchForm" class="search-bar-default">
+                <span class="paw-icon" aria-hidden="true">🐾</span>
+                <input type="text" placeholder="使用百度搜索..." aria-label="搜索框">
+                <button type="submit" class="search-icon" aria-label="搜索">🔍</button>
+            </form>
+        </div>
+        
+        <!-- 中文提示文本 -->
+        <div class="chinese-text" aria-label="提示文本">【 感谢千帆陪伴了，在之下降，感谢你了，感谢之下降，欢水之下。 】</div>
+        
+        <!-- 应用图标网格 -->
+        <div class="app-grid" id="appGrid">
+            <div class="app-icon" role="button" aria-label="翻译">
+                <div class="icon-bg"><span>翻译</span></div>
+                <div class="icon-text">翻译</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="AI 工具">
+                <div class="icon-bg"><span>AI 工具</span></div>
+                <div class="icon-text">AI 工具</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="图片">
+                <div class="icon-bg"><span>图片</span></div>
+                <div class="icon-text">图片</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="邮件">
+                <div class="icon-bg"><span>邮件</span></div>
+                <div class="icon-text">邮件</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="云存储">
+                <div class="icon-bg"><span>云存储</span></div>
+                <div class="icon-text">云存储</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="QQ 邮箱">
+                <div class="icon-bg"><span>QQ 邮箱</span></div>
+                <div class="icon-text">QQ 邮箱</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="云音乐">
+                <div class="icon-bg"><span>云音乐</span></div>
+                <div class="icon-text">云音乐</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="bilibili">
+                <div class="icon-bg"><span>bilibili</span></div>
+                <div class="icon-text">bilibili</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="图库">
+                <div class="icon-bg"><span>图库</span></div>
+                <div class="icon-text">图库</div>
+            </div>
+            <div class="app-icon" role="button" aria-label="网页主题">
+                <div class="icon-bg"><span>网页主题</span></div>
+                <div class="icon-text">网页主题</div>
+            </div>
+            <div class="app-icon add-icon" role="button" aria-label="添加应用">
+                <div class="icon-bg"><span>+</span></div>
+            </div>
+        </div>
+        
+        <!-- 底部应用快捷栏 -->
+        <div class="bottom-dock">
+            <div class="dock-icon" role="button" aria-label="手机">
+                <img src="./icon library/手机.png" alt="手机" class="dock-icon-img">
+            </div>
+            <div class="dock-icon" role="button" aria-label="网页">
+                <img src="./icon library/网页.png" alt="网页" class="dock-icon-img">
+            </div>
+            <div class="dock-icon" role="button" aria-label="刷新">
+                <img src="./icon library/刷新.png" alt="刷新" class="dock-icon-img">
+            </div>
+            <div class="dock-icon" role="button" aria-label="照片">
+                <img src="./icon library/照片.png" alt="照片" class="dock-icon-img">
+            </div>
+            <div class="dock-icon" role="button" aria-label="文件">
+                <img src="./icon library/文件.png" alt="文件" class="dock-icon-img">
+            </div>
+            <div class="dock-icon" role="button" aria-label="音乐">
+                <img src="./icon library/音乐.png" alt="音乐" class="dock-icon-img">
+            </div>
+        </div>
+        
+        <!-- 设置图标 -->
+        <div class="settings-icons">
+            <div class="settings-icon" role="button" aria-label="搜索设置"><span aria-hidden="true">🔍</span></div>
+            <div class="settings-icon" role="button" aria-label="页面设置"><span aria-hidden="true">⚙️</span></div>
+        </div>
+        
+        <!-- 设置菜单 -->
+        <div class="settings-menu" id="settingsMenu" role="menu" aria-hidden="true">
+            <ul>
+                <li data-action="theme" role="menuitem">页面主题</li>
+                <li data-action="search-engine" role="menuitem">搜索引擎设置</li>
+                <li data-action="wallpaper" role="menuitem">更换壁纸</li>
+                <li data-action="weather" role="menuitem">切换天气显示</li>
+                <li data-action="about" role="menuitem">关于</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
